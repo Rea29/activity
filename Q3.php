@@ -1,31 +1,31 @@
 <?php
 
 class Vehicle {
-    private $make;
+    private $brand;
     private $model;
     private $year;
 
     
-    public function __construct($make, $model, $year) {     // Constructor
-        $this->make = $make;
+    public function __construct($brand, $model, $year) {     // Constructor
+        $this->brand = $brand;
         $this->model = $model;
         $this->year = $year;
     }
 
    
     public function getDetails() {
-        echo "Make: " . $this->make . "<br>";
+        echo "brand: " . $this->brand . "<br>";
         echo "Model: " . $this->model . "<br>";         //methods were vehicles details
         echo "Year: " . $this->year . "<br>";
     }
 
    
-    public function getMake() {
-        return $this->make;
+    public function getbrand() {
+        return $this->brand;
     }
 
-    public function setMake($make) {
-        $this->make = $make;
+    public function setbrand($brand) {
+        $this->brand = $brand;
     }
 
     public function getModel() {
